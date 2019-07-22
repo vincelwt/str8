@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>str8.app - keep the right posture</title>
+	<link rel="icon" type="image/png" href="icon.png" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A simple Mac app to remind you to sit straight.">
+
+</head>
+<style>
+	body, html {
+		margin: 0;
+	}
+
+	html {
+		font: 112.5%/1.45em sans-serif
+	}
+
+	:root {
+		--content-width: 640px;
+		--content-padding: 60px;
+		--brand-color: #007aff;
+		--brand-gradient: linear-gradient(45deg,#003aff 0%,#00b9ff 100%);
+		--brand-color-2: #0095ff;
+	}
+
+	body {
+		font-family: sans-serif;
+		display: flex;
+
+	} 
+
+	body > div {
+		width: 50%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 100px;
+	}
+
+	.leftCol {
+		background: var(--brand-gradient);
+	}
+
+	.rightCol {
+		align-items: flex-start;
+	}
+
+	h1 {
+		margin: 0 0 0.4rem 0;
+		padding: 0;
+		color: var(--brand-color);
+		font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen, Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+		font-weight: bold;
+		text-rendering: optimizeLegibility;
+		font-size: 1.7rem;
+		line-height: 1.1;
+	}
+
+	h2 {
+		margin: 0 0 1.45rem 0;
+		padding: 0;
+		color: #000;
+		font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen, Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+		font-weight: 800;
+		text-rendering: optimizeLegibility;
+		font-size: 2.7rem;
+		line-height: 1.1;
+		-webkit-letter-spacing: -0.027rem;
+		-moz-letter-spacing: -0.027rem;
+		-ms-letter-spacing: -0.027rem;
+		letter-spacing: -0.027rem;
+	}
+
+	p {
+		color: rgba(0,0,0,0.6);
+		padding: 0;
+		margin: 0 0 1.45rem 0;
+	}
+
+	a[href*=twitter],
+	a[href*=lyser] {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		border-radius: 3px;
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 12px;
+		font-weight: 600;
+		margin: 0 3px;
+		line-height: 30px;
+		padding: 3px 7px 4px;
+	}
+
+	a[href*=lyser] {
+		background-color: #B721FF;
+		background: linear-gradient(309deg, #2165fd 0%, #B721FF 90%);
+	}
+
+	a[href*=twitter] {
+		background: var(--brand-color);
+	}
+
+	.button {
+		background: var(--brand-color);
+		background: var(--brand-color);
+		color: #fff;
+		text-decoration: none;
+		border-radius: 5px;
+		padding: 10px 20px 7px 20px;
+		line-height: 1.6;
+		margin: 1em 0;
+		display: flex;
+		align-items: baseline;
+		width: 200px;
+		justify-content: space-between;
+	}
+
+	.button:hover {
+		background: var(--brand-color-2);
+	}
+
+	.footer {
+		font-size: 14px;
+		margin-top: 30px;
+		color: #666;
+	}
+</style>
+<body>
+	<div class="leftCol">
+		<img width=350 src='notif.png' />
+	</div>
+	<div class="rightCol">
+		<h1>str8.app</h1>
+		<h2>Take care of your back</h2>
+		<p>It's hard to keep the right posture when sitting for hours in front of a computer.<br>Str8 is a simple app that will remind you to sit straight, and adapt the reminder frequency in function of how often you forget.</p>
+		
+		<a class="button" href='https://github.com/vincelwt/str8/releases'>
+			<svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16"><path fill="#FFF" d="M13 11.738c-.51 1.52-2.04 4.212-3.616 4.24-1.045.022-1.38-.634-2.576-.634-1.194 0-1.568.615-2.556.655C2.58 16.06 0 12.11 0 8.67c0-3.166 2.15-4.735 4.03-4.763 1.006-.02 1.958.696 2.572.696.617 0 1.773-.86 2.987-.734.504.02 1.932.21 2.85 1.58-2.43 1.63-2.05 5.033.56 6.284zM9.606 0C7.77.076 6.27 2.053 6.48 3.687 8.176 3.823 9.805 1.87 9.605 0z"></path></svg>
+			
+			<span>Download for Mac</span>
+				
+			<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 6"><path fill="#FFF" fill-rule="evenodd" d="M1.5.5L0 2l4 4 4-4L6.5.5 4 3"></path></svg>
+		</a>
+
+		<p class="footer">Cooked by <a href='https://twitter.com/vincelwt'>@vincelwt</a> from <a href='https://lyser.io'>lyser.io</a></p>
+	</div>
+</body>
+</html>
