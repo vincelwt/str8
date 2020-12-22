@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/vincelwt/str8#readme",
   "dependencies": {
-    "node-notifier": "^5.4.0"
+    "node-notifier": "^8.0.1"
   }
 }
